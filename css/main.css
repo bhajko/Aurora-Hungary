@@ -1,0 +1,30 @@
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+img.brand-logo {
+    height: 60px;
+}
+
+.fab.fa-2x {
+    margin: 5px;
+}
+
+.fab.fa-2x:hover {
+    color: rgb(0, 186, 242);
+    transition: .5s ease;
+}
+
+.page-footer {
+    background: #0D1C2B;
+}
+
+/* .footer-copyright {
+    background: rgba(0, 186, 242, 0.1) !important;
+} */

@@ -12,6 +12,10 @@ img.brand-logo {
     height: 60px;
 }
 
+.caption>h3 {
+    color: #00AEEF !important;
+}
+
 .fab.fa-2x {
     margin: 5px;
 }
@@ -24,7 +28,3 @@ img.brand-logo {
 .page-footer {
     background: #0D1C2B;
 }
-
-/* .footer-copyright {
-    background: rgba(0, 186, 242, 0.1) !important;
-} */

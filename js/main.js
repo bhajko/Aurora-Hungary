@@ -7,10 +7,3 @@ M.Slider.init(slider, {
     height: 550,
     interval: 5000
 });
-
-const tabs = document.querySelector('.tabs');
-M.Tabs.init(tabs, {});
-
-M.toast({
-    html: 'Email elküldve'
-});

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="hu" class="animated fadeIn">
 
 <head>
     <!--Import Google Icon Font-->
@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
         crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/animate.min.css">
     <link rel=icon href="img/favicon.ico">
     <!--Let browser know website is optimized for mobile-->
     <meta charset="UTF-8">
@@ -86,7 +87,7 @@
                                 <textarea id="icon_prefix2" name="message" class="materialize-textarea" required></textarea>
                                 <label for="icon_prefix2">Üzenet</label>
                             </div>
-                            <button type="submit" name="submit" onclick="M.toast({html: 'Email elküldve'})" class="btn blue waves-effect waves-light white-text">Küldés</button>
+                            <button type="submit" name="submit" class="btn blue waves-effect waves-light white-text">Küldés</button>
                         </form>
                     </div>
                 </div>

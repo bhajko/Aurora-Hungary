@@ -31,7 +31,7 @@
                         <li><a href="products.html" class="grey-text text-darken-4">Termékek</a></li>
                         <li><a href="references.html" class="grey-text text-darken-4">Referenciák</a></li>
                         <li><a href="aboutus.html" class="grey-text text-darken-4">Rólunk</a></li>
-                        <li><a href="contact.html" class="grey-text text-darken-4">Kapcsolat</a></li>
+                        <li><a href="contact.php" class="grey-text text-darken-4">Kapcsolat</a></li>
                     </ul>
                 </div>
             </div>
@@ -43,7 +43,7 @@
             <li><a href="products.html" class="grey-text text-darken-4">Termékek</a></li>
             <li><a href="references.html" class="grey-text text-darken-4">Referenciák</a></li>
             <li><a href="aboutus.html" class="grey-text text-darken-4">Rólunk</a></li>
-            <li><a href="contact.html" class="grey-text text-darken-4">Kapcsolat</a></li>
+            <li><a href="contact.php" class="grey-text text-darken-4">Kapcsolat</a></li>
         </ul>
     </header>
 
@@ -70,22 +70,24 @@
                 <div class="col s12 l6">
                     <div class="card-panel grey lighten-3 center hoverable">
                         <h4>Küldjön nekünk üzenetet</h4>
-                        <div class="input-field col s12">
-                            <i class="material-icons prefix">account_circle</i>
-                            <input id="icon_prefix" type="text" class="validate">
-                            <label for="icon_prefix">Név</label>
-                        </div>
-                        <div class="input-field col s12">
-                            <i class="material-icons prefix">email</i>
-                            <input id="icon_email" type="tel" class="validate">
-                            <label for="icon_email">E-mail</label>
-                        </div>
-                        <div class="input-field col s12">
-                            <i class="material-icons prefix">mode_edit</i>
-                            <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
-                            <label for="icon_prefix2">Üzenet</label>
-                        </div>
-                        <button type="submit" class="btn blue waves-effect waves-light white-text">Küldés</button>
+                        <form class="contact-form" action="contactform.php" method="POST">
+                            <div class="input-field col s12">
+                                <i class="material-icons prefix">account_circle</i>
+                                <input id="icon_prefix" type="text" name="name" class="validate" required>
+                                <label for="icon_prefix">Név</label>
+                            </div>
+                            <div class="input-field col s12">
+                                <i class="material-icons prefix">email</i>
+                                <input id="icon_email" type="text" name="email" class="validate" required>
+                                <label for="icon_email">E-mail</label>
+                            </div>
+                            <div class="input-field col s12">
+                                <i class="material-icons prefix">mode_edit</i>
+                                <textarea id="icon_prefix2" name="message" class="materialize-textarea" required></textarea>
+                                <label for="icon_prefix2">Üzenet</label>
+                            </div>
+                            <button type="submit" name="submit" onclick="M.toast({html: 'Email elküldve'})" class="btn blue waves-effect waves-light white-text">Küldés</button>
+                        </form>
                     </div>
                 </div>
             </div>

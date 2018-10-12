@@ -10,3 +10,7 @@ M.Slider.init(slider, {
 
 const tabs = document.querySelector('.tabs');
 M.Tabs.init(tabs, {});
+
+M.toast({
+    html: 'Email elküldve'
+});

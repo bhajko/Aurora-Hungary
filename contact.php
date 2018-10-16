@@ -1,3 +1,4 @@
+<?php include('contactform.php'); ?>
 <!DOCTYPE html>
 <html lang="hu" class="animated fadeIn">
 
@@ -71,23 +72,27 @@
                 <div class="col s12 l6">
                     <div class="card-panel grey lighten-3 center hoverable">
                         <h4>Küldjön nekünk üzenetet</h4>
-                        <form class="contact-form" action="contactform.php" method="POST">
+                        <form class="contact-form" action="<?= $_SERVER['PHP_SELF']; ?>" method="POST">
                             <div class="input-field col s12">
                                 <i class="material-icons prefix">account_circle</i>
-                                <input id="icon_prefix" type="text" name="name" class="validate" required>
+                                <input id="icon_prefix" type="text" name="name" class="validate" value="<?= $name ?>">
                                 <label for="icon_prefix">Név</label>
+                                <span style="color: red;font-weight: bold;font-family: Arial, Helvetica, sans-serif"><?= $name_error ?></span>
                             </div>
                             <div class="input-field col s12">
                                 <i class="material-icons prefix">email</i>
-                                <input id="icon_email" type="text" name="email" class="validate" required>
+                                <input id="icon_email" type="text" name="email" class="validate" value="<?= $email ?>">
                                 <label for="icon_email">E-mail</label>
+                                <span style="color: red;font-weight: bold;font-family: Arial, Helvetica, sans-serif"><?= $email_error ?></span>
                             </div>
                             <div class="input-field col s12">
                                 <i class="material-icons prefix">mode_edit</i>
-                                <textarea id="icon_prefix2" name="message" class="materialize-textarea" required></textarea>
+                                <textarea id="icon_prefix2" type="text" name="message" class="materialize-textarea" value="<?= $message ?>"></textarea>
                                 <label for="icon_prefix2">Üzenet</label>
+                                <span style="color: red;font-weight: bold;font-family: Arial, Helvetica, sans-serif"><?= $message_error ?></span>
                             </div>
                             <button type="submit" name="submit" class="btn blue waves-effect waves-light white-text">Küldés</button>
+                            <div style="color: green;font-weight: bold;padding-top: 10px;font-family: Arial, Helvetica, sans-serif"><?= $success ?></div>
                         </form>
                     </div>
                 </div>

@@ -12,6 +12,26 @@ img.brand-logo {
     height: 60px;
 }
 
+.wrapper {
+    width: 100%;
+}
+
+.video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0px;
+}
+
+.video-wrapper iframe {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    height: 100%;
+    width: 100%;
+}
+
 .caption>h3 {
     color: #00AEEF !important;
 }

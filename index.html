@@ -15,6 +15,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="Cache-control" content="no-cache">
     <title>Aurora Lighting Hungary</title>
 </head>
 
@@ -50,49 +51,63 @@
 
     <!-- Main -->
     <main>
-        <section class="slider">
+        <section class="slider hide-on-small-only">
             <ul class="slides">
                 <li>
-                    <img class="responsive-img" src="img/project-solutions.jpg">
-                    <div class="caption left-align hide-on-small-only">
-                        <h3 class="blue-text">Projekt megoldások</h3>
+                    <img src="img/project-solutions.jpg">
+                    <div class="caption left-align">
+                        <h3 class="white-text">Projekt megoldások</h3>
+                        <button id="slide1-btn" class="btn waves-effect waves-light">
+                            <a class="white-text" href="http://auroralighting.com/gb/about-us#projects">Több info</a>
+                        </button>
                     </div>
                 </li>
                 <li>
-                    <img class="responsive-img" src="img/aone_banner.jpg">
-                    <div class="caption left-align hide-on-small-only">
-                        <h3 class="blue-text">AOne™: ÚJ Smart<br>
-                            Lighting Solutions</h3>
+                    <img src="img/aone_banner.jpg">
+                    <div class="caption left-align">
+                        <h3 class="blue-text">AOne™: Okos világítás</h3>
+                        <button id="slide2-btn" class="btn waves-effect waves-light">
+                            <a class="white-text" href="http://auroralighting.com/gb/aone">Több info</a>
+                        </button>
                     </div>
                 </li>
                 <li>
-                    <img class="responsive-img" src="img/residential_home.jpg">
-                    <div class="caption left-align hide-on-small-only">
+                    <img src="img/residential_home.jpg">
+                    <div class="caption left-align">
                         <h3 class="blue-text">Otthoni világítás</h3>
+                        <button id="slide3-btn" class="btn waves-effect waves-light">
+                            <a class="white-text" href="http://auroralighting.com/gb/aone">Több info</a>
+                        </button>
                     </div>
                 </li>
                 <li>
-                    <img class="responsive-img" src="img/commercial_home.jpg">
-                    <div class="caption left-align hide-on-small-only">
+                    <img src="img/commercial_home.jpg">
+                    <div class="caption left-align">
                         <h3 class="blue-text">Munkahelyi világítás</h3>
                     </div>
                 </li>
                 <li>
-                    <img class="responsive-img" src="img/retail_lg.jpg">
-                    <div class="caption left-align hide-on-small-only">
+                    <img src="img/retail_lg.jpg">
+                    <div class="caption left-align">
                         <h3 class="blue-text">Kereskedelmi világítás</h3>
                     </div>
                 </li>
                 <li>
-                    <img class="responsive-img" src="img/industrial_home.jpg">
-                    <div class="caption left-align hide-on-small-only">
+                    <img src="img/industrial_home.jpg">
+                    <div class="caption left-align">
                         <h3 class="blue-text">Ipari világítás</h3>
+                        <button class="btn waves-effect waves-light orange darken-2">
+                            <a class="white-text" href="http://enlitelighting.com/gb/">Több info</a>
+                        </button>
                     </div>
                 </li>
                 <li>
-                    <img class="responsive-img" src="img/enlitel_lg.jpg">
-                    <div class="caption left-align hide-on-small-only">
-                        <img src="img/enlite_logo_new.png" style="max-width:50px!important;" alt="Enlite">
+                    <img src="img/enlitel_lg.jpg">
+                    <div class="caption left-align">
+                        <h3 class="orange-text text-darken-2">ENLITE termékcsalád</h3>
+                        <button id="slide7-btn" class="btn waves-effect waves-light orange darken-2">
+                            <a class="white-text" href="http://enlitelighting.com/gb/">Több info</a>
+                        </button>
                     </div>
                 </li>
             </ul>
@@ -125,14 +140,13 @@
                 </div>
             </div>
         </div>
-        <div class="footer-copyright">
+        <div id="copyright" class="footer-copyright">
             <div class="container center">
                 Aurora Hungary &copy; 2018
             </div>
         </div>
     </footer>
 
-    <!--JavaScript at end of body for optimized loading-->
     <script type="text/javascript" src="js/materialize.min.js"></script>
     <script src="js/main.js"></script>
 </body>

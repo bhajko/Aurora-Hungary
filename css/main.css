@@ -12,6 +12,17 @@ img.brand-logo {
     height: 60px;
 }
 
+#slide1-btn,
+#slide2-btn {
+    background: #00BAF2 !important;
+}
+
+#slide1-btn:hover,
+#slide2-btn:hover,
+#slide7-btn:hover {
+    background: #0D1C2B !important;
+}
+
 .wrapper {
     width: 100%;
 }
@@ -77,4 +88,8 @@ form button[type=submit] {
 
 form button[type=submit]:hover {
     background: #0D1C2B !important;
+}
+
+#copyright {
+    background: #00BAF2 !important;
 }

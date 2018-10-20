@@ -50,7 +50,33 @@
 
     <!-- Main -->
     <main>
+        <section class="section white">
+            <div class="container">
+                <div class="row">
+                    <div class="col s12">
+                        <button data-filter="all" class="btn waves-effect waves-light">Összes</button>
+                        <button data-filter="1" class="btn waves-effect waves-light">LED panel</button>
+                        <button data-filter="2" class="btn waves-effect waves-light">Downlight</button>
+                        <button data-filter="3" class="btn waves-effect waves-light">Mélysugárzó</button>
+                        <button data-filter="4" class="btn waves-effect waves-light">Reflektor</button>
+                    </div>
+                    <div class="col s12 m4">
+                        <div class="card medium">
+                            <div class="card-image">
+                                <img src="images/sample-1.jpg">
+                                <span class="card-title">LED panel</span>
+                            </div>
+                            <div class="card-content">
+                                <p>I am a very simple card. I am good at containing small bits of information. I am
+                                    convenient
+                                    because I require little markup to use effectively.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
+        </section>
     </main>
 
     <!-- Footer -->
@@ -79,7 +105,7 @@
                 </div>
             </div>
         </div>
-        <div class="footer-copyright">
+        <div id="copyright" class="footer-copyright">
             <div class="container center">
                 Aurora Hungary &copy; 2018
             </div>
@@ -87,6 +113,8 @@
     </footer>
 
     <!--JavaScript at end of body for optimized loading-->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery.filterizr.min.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
     <script src="js/main.js"></script>
 </body>

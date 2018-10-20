@@ -5,5 +5,5 @@ const slider = document.querySelector('.slider');
 M.Slider.init(slider, {
     indicators: false,
     height: 550,
-    interval: 5000
+    interval: 3000
 });

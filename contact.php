@@ -92,7 +92,7 @@
                                 <span style="color: red;font-weight: bold;font-family: Arial, Helvetica, sans-serif"><?= $message_error ?></span>
                             </div>
                             <button type="submit" name="submit" class="btn blue waves-effect waves-light white-text">Küldés</button>
-                            <div style="color: green;font-weight: bold;padding-top: 10px;font-family: Arial, Helvetica, sans-serif"><?= $success ?></div>
+                            <span style="color: green;font-weight: bold;padding-top: 10px;font-family: Arial, Helvetica, sans-serif"><?= $success ?></span>
                         </form>
                     </div>
                 </div>
@@ -126,7 +126,7 @@
                 </div>
             </div>
         </div>
-        <div class="footer-copyright">
+        <div id="copyright" class="footer-copyright">
             <div class="container center">
                 Aurora Hungary &copy; 2018
             </div>

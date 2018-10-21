@@ -8,8 +8,15 @@ main {
     flex: 1 0 auto;
 }
 
-img.brand-logo {
-    height: 60px;
+nav.navbar-material {
+    background: #fff;
+}
+
+.navbar-material .container .nav-wrapper .brand-logo img {
+    height: 54px;
+    position: relative;
+    top: 5px;
+    padding-bottom: 5px;
 }
 
 #slide1-btn,
@@ -92,4 +99,12 @@ form button[type=submit]:hover {
 
 #copyright {
     background: #00BAF2 !important;
+}
+
+@media (max-width: 600px) {
+    .navbar-material .nav-wrapper .brand-logo img {
+        height: 54px;
+        position: relative;
+        bottom: 5px;
+    }
 }

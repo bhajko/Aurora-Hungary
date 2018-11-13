@@ -1,4 +1,3 @@
-<?php include('contactform.php'); ?>
 <!DOCTYPE html>
 <html lang="hu" class="animated fadeIn">
 
@@ -53,54 +52,7 @@
 
     <!-- Main -->
     <main>
-        <img class="responsive-img" src="img/contact_map.jpg" alt="aurora-map">
-        <div class="container">
-            <div class="row">
-                <div>&nbsp;</div>
-                <div class="col s12 l6">
-                    <div class="card-panel grey lighten-3 center hoverable">
-                        <h4>Elérhetőségeink</h4>
-                        <div>&nbsp;</div>
-                        <div>&nbsp;</div>
-                        <h5 class="info"><i class="material-icons small">phone_iphone</i> 06 30 9190081</h5>
-                        <h5 class="info"><i class="material-icons small">email</i> info@aurorahungary.hu</h5>
-                        <h5 class="info"><i class="material-icons small">place</i> 1068 Budapest Lövölde tér 3.</h5>
-                        <div>&nbsp;</div>
-                        <div>&nbsp;</div>
-                        <div>&nbsp;</div>
-                        <div>&nbsp;</div>
-                    </div>
-                </div>
-                <div class="col s12 l6">
-                    <div class="card-panel grey lighten-3 center hoverable">
-                        <h4>Küldjön nekünk üzenetet</h4>
-                        <form class="contact-form" action="<?= $_SERVER['PHP_SELF']; ?>" method="POST">
-                            <div class="input-field col s12">
-                                <i class="material-icons prefix">account_circle</i>
-                                <input id="icon_prefix" type="text" name="name" class="validate" value="<?= $name ?>">
-                                <label for="icon_prefix">Név</label>
-                                <span style="color: red;font-weight: bold;font-family: Arial, Helvetica, sans-serif"><?= $name_error ?></span>
-                            </div>
-                            <div class="input-field col s12">
-                                <i class="material-icons prefix">email</i>
-                                <input id="icon_email" type="text" name="email" class="validate" value="<?= $email ?>">
-                                <label for="icon_email">E-mail</label>
-                                <span style="color: red;font-weight: bold;font-family: Arial, Helvetica, sans-serif"><?= $email_error ?></span>
-                            </div>
-                            <div class="input-field col s12">
-                                <i class="material-icons prefix">mode_edit</i>
-                                <textarea id="icon_prefix2" type="text" name="message" class="materialize-textarea" value="<?= $message ?>"></textarea>
-                                <label for="icon_prefix2">Üzenet</label>
-                                <span style="color: red;font-weight: bold;font-family: Arial, Helvetica, sans-serif"><?= $message_error ?></span>
-                            </div>
-                            <button type="submit" name="submit" class="btn blue waves-effect waves-light white-text">Küldés</button>
-                            <br>
-                            <span style="color: green;font-weight: bold;padding-top: 10px;font-family: Arial, Helvetica, sans-serif"><?= $success ?></span>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
+
     </main>
 
     <!-- Footer -->

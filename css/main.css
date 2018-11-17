@@ -113,3 +113,15 @@ form button[type=submit]:hover {
         bottom: 5px;
     }
 }
+
+@media (max-width: 460px) {
+    h5.info {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 993px) and (max-width: 1100px) {
+    .navbar-material .container .nav-wrapper .brand-logo img {
+        display: none !important;
+    }
+}

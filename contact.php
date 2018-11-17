@@ -57,7 +57,7 @@
         <div class="container">
             <div class="row">
                 <div>&nbsp;</div>
-                <div class="col s12 l6">
+                <div class="col s12 m10 offset-m1 l6">
                     <div class="card-panel grey lighten-3 center hoverable">
                         <h4>Elérhetőségeink</h4>
                         <div>&nbsp;</div>
@@ -71,9 +71,9 @@
                         <div>&nbsp;</div>
                     </div>
                 </div>
-                <div class="col s12 l6">
+                <div class="col s12 m10 offset-m1 l6">
                     <div class="card-panel grey lighten-3 center hoverable">
-                        <h4>Küldjön nekünk üzenetet</h4>
+                        <h4>Küldjön üzenetet</h4>
                         <form class="contact-form" action="<?= $_SERVER['PHP_SELF']; ?>" method="POST">
                             <div class="input-field col s12">
                                 <i class="material-icons prefix">account_circle</i>

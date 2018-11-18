@@ -1,3 +1,4 @@
+<?php include('requestform.php'); ?>
 <!DOCTYPE html>
 <html lang="hu" class="animated fadeIn">
 
@@ -32,7 +33,7 @@
                         <li><a href="products.html" class="grey-text text-darken-4">Termékek</a></li>
                         <li><a href="references.html" class="grey-text text-darken-4">Referenciák</a></li>
                         <li><a href="aboutus.html" class="grey-text text-darken-4">Rólunk</a></li>
-                        <li><a href="request.html" class="red-text">Ajánlatkérés</a></li>
+                        <li><a href="request.php" class="red-text">Ajánlatkérés</a></li>
                         <li><a href="contact.php" class="grey-text text-darken-4">Kapcsolat</a></li>
                     </ul>
                 </div>
@@ -45,14 +46,73 @@
             <li><a href="products.html" class="grey-text text-darken-4">Termékek</a></li>
             <li><a href="references.html" class="grey-text text-darken-4">Referenciák</a></li>
             <li><a href="aboutus.html" class="grey-text text-darken-4">Rólunk</a></li>
-            <li><a href="request.html" class="red-text text-darken-4">Ajánlatkérés</a></li>
+            <li><a href="request.php" class="red-text text-darken-4">Ajánlatkérés</a></li>
             <li><a href="contact.php" class="grey-text text-darken-4">Kapcsolat</a></li>
         </ul>
     </header>
 
     <!-- Main -->
     <main>
+        <img class="responsive-img" src="img/consulting.jpg" alt="consulting">
 
+        <div class="container">
+            <div class="row">
+                <div>&nbsp;</div>
+                <div class="col s12 m10 offset-m1 l6">
+                    <div class="card-panel grey lighten-3 center hoverable">
+                        <h4>Kérjen tőlünk árajánlatot</h4>
+                        <div>&nbsp;</div>
+                        <p>Világítástechnikai projektek, felújítások vagy tanácsadás kapcsán, forduljon hozzánk bizalommal! 
+                            </p>
+                        <p>Tanácsadóink célja a komplett megoldások szállítása, a tervezéstől, a lebonyolításig.</p>
+                        <p>Amennyiben rendelkezik már előzetes információkkal, tervekkel vagy mennyiségi adatokkal, kérjük, ossza ezeket meg velünk!</p>
+                        <p>A legfrissebb katalógusunkat az alábbi linken érheti el.</p>
+                        <div>&nbsp;</div>
+                        <a id="au-catalogue" href="https://issuu.com/auroralighting/docs/aus_3.0_book_low_res" target="_blank" style="color: #0b1c2a"><b>AURORA</b></a>
+                        <a href="https://issuu.com/auroralighting/docs/trade_ed2_-_uk_book_140918_low_res_" target="_blank" class="orange-text"><b>ENLITE</b></a>
+                        <div>&nbsp;</div>
+                    </div>
+                </div>
+                <div class="col s12 m10 offset-m1 l6">
+                    <div class="card-panel grey lighten-3 center hoverable">
+                        <h4>Ajánlatkérés</h4>
+                        <form class="contact-form" action="<?= $_SERVER['PHP_SELF']; ?>" method="POST" enctype="multipart/form-data">
+                            <div class="input-field col s12">
+                                <i class="material-icons prefix">account_circle</i>
+                                <input id="icon_prefix" type="text" name="name" class="validate" value="<?= $name ?>">
+                                <label for="icon_prefix">Név</label>
+                                <span style="color: red;font-weight: bold;font-family: Arial, Helvetica, sans-serif"><?= $name_error ?></span>
+                            </div>
+                            <div class="input-field col s12">
+                                <i class="material-icons prefix">email</i>
+                                <input id="icon_email" type="text" name="email" class="validate" value="<?= $email ?>">
+                                <label for="icon_email">E-mail</label>
+                                <span style="color: red;font-weight: bold;font-family: Arial, Helvetica, sans-serif"><?= $email_error ?></span>
+                            </div>
+                            <div class="input-field col s12">
+                                <i class="material-icons prefix">mode_edit</i>
+                                <textarea id="icon_prefix2" type="text" name="message" class="materialize-textarea" value="<?= $message ?>"></textarea>
+                                <label for="icon_prefix2">Üzenet</label>
+                                <span style="color: red;font-weight: bold;font-family: Arial, Helvetica, sans-serif"><?= $message_error ?></span>
+                            </div>
+                            <div class="file-field input-field col s12">
+                                <div class="btn" style="background: #00BAF2">
+                                    <span><i class="fas fa-file-upload"></i></span>
+                                    <input type="file" multiple value="<?= $file ?>">
+                                </div>
+                                <div class="file-path-wrapper">
+                                    <input class="file-path validate" type="text" name="file" placeholder="Egy vagy több fájl csatolása" value="<?= $file ?>">
+                                    <span style="color: red;font-weight: bold;font-family: Arial, Helvetica, sans-serif"><?= $file_error ?></span>
+                                </div>
+                            </div>
+                            <button type="submit" name="submit" class="btn blue waves-effect waves-light white-text">Küldés</button>
+                            <br>
+                            <span style="color: green;font-weight: bold;padding-top: 10px;font-family: Arial, Helvetica, sans-serif"><?= $success ?></span>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 
     <!-- Footer -->

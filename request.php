@@ -79,13 +79,13 @@
                         <form class="contact-form" action="<?= $_SERVER['PHP_SELF']; ?>" method="POST" enctype="multipart/form-data">
                             <div class="input-field col s12">
                                 <i class="material-icons prefix">account_circle</i>
-                                <input id="icon_prefix" type="text" name="name" class="validate" value="<?= $name ?>">
+                                <input id="icon_prefix" type="text" name="name" value="<?= $name ?>">
                                 <label for="icon_prefix">Név</label>
                                 <span style="color: red;font-weight: bold;font-family: Arial, Helvetica, sans-serif"><?= $name_error ?></span>
                             </div>
                             <div class="input-field col s12">
                                 <i class="material-icons prefix">email</i>
-                                <input id="icon_email" type="text" name="email" class="validate" value="<?= $email ?>">
+                                <input id="icon_email" type="text" name="email" value="<?= $email ?>">
                                 <label for="icon_email">E-mail</label>
                                 <span style="color: red;font-weight: bold;font-family: Arial, Helvetica, sans-serif"><?= $email_error ?></span>
                             </div>

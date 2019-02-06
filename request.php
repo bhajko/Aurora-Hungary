@@ -68,8 +68,8 @@
                         <p>Amennyiben rendelkezik már előzetes információkkal, tervekkel vagy mennyiségi adatokkal, kérjük, ossza ezeket meg velünk!</p>
                         <p>A legfrissebb katalógusunkat az alábbi linken érheti el.</p>
                         <div>&nbsp;</div>
-                        <a id="au-catalogue" href="https://issuu.com/auroralighting/docs/aus_3.0_book_low_res" target="_blank" style="color: #0b1c2a"><b>AURORA</b></a>
-                        <a href="https://issuu.com/auroralighting/docs/trade_ed2_-_uk_book_140918_low_res_" target="_blank" class="orange-text"><b>ENLITE</b></a>
+                        <a href="https://issuu.com/auroralighting/docs/aus_3.0_book_low_res" target="_blank" class="waves-effect waves-light btn light-blue darken-4 white-text"><b>AURORA</b></a>
+                        <a href="https://issuu.com/auroralighting/docs/trade_ed2_-_eu_book__1_" target="_blank" class="waves-effect waves-light btn orange"><b>ENLITE</b></a>
                         <div>&nbsp;</div>
                     </div>
                 </div>
@@ -77,6 +77,7 @@
                     <div class="card-panel grey lighten-3 center hoverable">
                         <h4>Ajánlatkérés</h4>
                         <form class="contact-form" action="<?= $_SERVER['PHP_SELF']; ?>" method="POST" enctype="multipart/form-data">
+                            <input name="firstname" type="text" id="firstname" class="hide-robot" style="display: none">
                             <div class="input-field col s12">
                                 <i class="material-icons prefix">account_circle</i>
                                 <input id="icon_prefix" type="text" name="name" value="<?= $name ?>">

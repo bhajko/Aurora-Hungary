@@ -72,6 +72,7 @@
                     <div class="card-panel grey lighten-3 center hoverable">
                         <h4>Küldjön üzenetet</h4>
                         <form class="contact-form" action="<?= $_SERVER['PHP_SELF']; ?>" method="POST">
+                            <input name="firstname" type="text" id="firstname" class="hide-robot" style="display: none">
                             <div class="input-field col s12">
                                 <i class="material-icons prefix">account_circle</i>
                                 <input id="icon_prefix" type="text" name="name" class="validate" value="<?= $name ?>">

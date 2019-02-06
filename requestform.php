@@ -35,15 +35,20 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
             $name = $_POST['name'];
             $mailFrom = $_POST['email'];
             $message = $_POST['message'];
+            $honeypot = $_POST['firstname'];
 
             $mailTo = "bhajko@gmail.com";
             $subject = "Ajánlatkérés érkezett az Aurora Hungary weboldalról";
             $headers = "From: ".$mailFrom;
             $txt = "Levelet kaptál tőle: ".$name.".\n\n".$message;
 
-            if(mail($mailTo, $subject, $txt, $headers)) {
-                $success = "Ajánlatkérése elküldve, hamarosan felvesszük Önnel a kapcsolatot";
-                $name = $email = $message = "";
+            if($honeypot) {
+                
+            } else {
+                if(mail($mailTo, $subject, $txt, $headers)) {
+                    $success = "Ajánlatkérése elküldve, hamarosan felvesszük Önnel a kapcsolatot";
+                    $name = $email = $message = "";
+                }
             }
         }
     }

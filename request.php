@@ -127,6 +127,7 @@
                         <li><a href="products.html">TERMÉKEK</a></li>
                         <li><a href="references.html">REFERENCIÁK</a></li>
                         <li><a href="aboutus.html">RÓLUNK</a></li>
+                        <li><a href="request.php">AJÁNLATKÉRÉS</a></li>
                         <li><a href="contact.php">KAPCSOLAT</a></li>
                     </ul>
                 </div>

@@ -37,7 +37,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
             $message = $_POST['message'];
             $honeypot = $_POST['firstname'];
 
-            $mailTo = "bhajko@gmail.com";
+            $mailTo = "info@aurorahungary.hu";
             $subject = "Üzenete érkezett az Aurora Hungary weboldalról";
             $headers = "From: ".$mailFrom;
             $txt = "Levelet kaptál tőle: ".$name.".\n\n".$message;

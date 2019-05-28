@@ -1,6 +1,6 @@
 <?php include('contactform.php'); ?>
 <!DOCTYPE html>
-<html lang="hu" class="animated fadeIn">
+<html lang="hu">
 
 <head>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -49,7 +49,7 @@
     </header>
 
     <!-- Main -->
-    <main>
+    <main class="animated fadeIn">
         <img class="responsive-img" src="img/contact_map.jpg" alt="aurora-map">
         <div class="container">
             <div class="row">
@@ -58,11 +58,10 @@
                     <div class="card-panel grey lighten-3 center hoverable">
                         <h4>Elérhetőségeink</h4>
                         <div>&nbsp;</div>
-                        <div>&nbsp;</div>
-                        <h5 class="info"><i class="material-icons small">phone_iphone</i> 06 30 9190081</h5>
+                        <h5 class="info"><i class="material-icons small">business</i> Aurora-Enlite Hungary Kft.</h5>
+                        <h5 class="info"><i class="material-icons small">place</i> 2173 Kartal Bartók Béla utca 2-10.</h5>
                         <h5 class="info"><i class="material-icons small">email</i> info@aurorahungary.hu</h5>
-                        <h5 class="info"><i class="material-icons small">place</i> 1068 Budapest Lövölde tér 3.</h5>
-                        <div>&nbsp;</div>
+                        <h5 class="info"><i class="material-icons small">phone_iphone</i> 06 20 77 66 272</h5>
                         <div>&nbsp;</div>
                         <div>&nbsp;</div>
                         <div>&nbsp;</div>
@@ -91,7 +90,7 @@
                                 <label for="icon_prefix2">Üzenet</label>
                                 <span style="color: red;font-weight: bold;font-family: Arial, Helvetica, sans-serif"><?= $message_error ?></span>
                             </div>
-                            <button type="submit" name="submit" class="btn blue waves-effect waves-light white-text">Küldés</button>
+                            <button type="submit" name="submit" class="btn blue waves-effect waves-light white-text" style="margin-bottom: 4px;">Küldés</button>
                             <br>
                             <span style="color: green;font-weight: bold;padding-top: 10px;font-family: Arial, Helvetica, sans-serif"><?= $success ?></span>
                         </form>

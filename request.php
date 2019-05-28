@@ -1,6 +1,6 @@
 <?php include('requestform.php'); ?>
 <!DOCTYPE html>
-<html lang="hu" class="animated fadeIn">
+<html lang="hu">
 
 <head>
     <!--Import Google Icon Font-->
@@ -52,7 +52,7 @@
     </header>
 
     <!-- Main -->
-    <main>
+    <main class="animated fadeIn">
         <img class="responsive-img" src="img/consulting.jpg" alt="consulting">
 
         <div class="container">

@@ -1,127 +1,128 @@
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
 }
 
 main {
-    flex: 1 0 auto;
+  flex: 1 0 auto;
 }
 
 p {
-    font-size: 1.2em;
+  font-size: 1.2em;
 }
 
 p.ref {
-    font-size: 1em;
+  font-size: 1em;
 }
 
 nav.navbar-material {
-    background: #fff;
+  background: #fff;
 }
 
 .navbar-material .container .nav-wrapper .brand-logo img {
-    height: 54px;
-    position: relative;
-    top: 5px;
-    padding-bottom: 5px;
+  height: 54px;
+  position: relative;
+  top: 5px;
+  padding-bottom: 5px;
 }
 
 #aone-btn:hover {
-    background: #0D1C2B !important;
+  background: #0d1c2b !important;
 }
 
 .wrapper {
-    width: 100%;
+  width: 100%;
 }
 
 .video-wrapper {
-    position: relative;
-    padding-bottom: 56.25%;
-    height: 0px;
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0px;
 }
 
 .video-wrapper iframe {
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    height: 100%;
-    width: 100%;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  height: 100%;
+  width: 100%;
 }
 
-.caption>h3 {
-    color: #00AEEF !important;
+.caption > h3 {
+  color: #00aeef !important;
 }
 
 .fab.fa-2x {
-    margin: 5px;
+  margin: 5px;
 }
 
 .fab.fa-2x:hover {
-    color: rgb(0, 186, 242);
-    transition: .3s ease;
+  color: rgb(0, 186, 242);
+  transition: 0.3s ease;
 }
 
 .page-footer {
-    background: #0D1C2B;
+  background: #0d1c2b;
 }
 
-.input-field input[type=text]:focus+label {
-    color: #00BAF2 !important;
+.input-field input[type="text"]:focus + label {
+  color: #00baf2 !important;
 }
 
-.input-field input[type=text]:focus {
-    border-bottom: 1px solid #00BAF2 !important;
-    box-shadow: 0 1px 0 0 #00BAF2 !important;
+.input-field input[type="text"]:focus {
+  border-bottom: 1px solid #00baf2 !important;
+  box-shadow: 0 1px 0 0 #00baf2 !important;
 }
 
 .input-field .prefix.active {
-    color: #00BAF2;
+  color: #00baf2;
 }
 
-.input-field textarea:focus+label {
-    color: #00BAF2 !important;
+.input-field textarea:focus + label {
+  color: #00baf2 !important;
 }
 
 .input-field textarea:focus {
-    border-bottom: 1px solid #00BAF2 !important;
-    box-shadow: 0 1px 0 0 #00BAF2 !important;
+  border-bottom: 1px solid #00baf2 !important;
+  box-shadow: 0 1px 0 0 #00baf2 !important;
 }
 
-form button[type=submit] {
-    background: #00BAF2 !important;
+form button[type="submit"] {
+  background: #00baf2 !important;
 }
 
-form button[type=submit]:hover {
-    background: #0D1C2B !important;
+form button[type="submit"]:hover {
+  background: #0d1c2b !important;
 }
 
 #copyright {
-    background: #00BAF2 !important;
+  background: #00baf2 !important;
 }
 
 @media (max-width: 600px) {
-    .navbar-material .nav-wrapper .brand-logo img {
-        height: 54px;
-        position: relative;
-        bottom: 5px;
-    }
+  .navbar-material .nav-wrapper .brand-logo img {
+    height: 54px;
+    position: relative;
+    top: 2px;
+    bottom: 5px;
+  }
 }
 
 @media (max-width: 460px) {
-    h5.info {
-        font-size: 18px;
-    }
+  h5.info {
+    font-size: 18px;
+  }
 }
 
 @media (min-width: 993px) and (max-width: 1100px) {
-    .navbar-material .container .nav-wrapper .brand-logo img {
-        display: none !important;
-    }
+  .navbar-material .container .nav-wrapper .brand-logo img {
+    display: none !important;
+  }
 }

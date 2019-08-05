@@ -31,7 +31,7 @@
                         <li><a href="references.html" class="grey-text text-darken-4">Referenciák</a></li>
                         <li><a href="aboutus.html" class="grey-text text-darken-4">Rólunk</a></li>
                         <li><a href="request.php" class="red-text">Ajánlatkérés</a></li>
-                        <li><a href="contact.php" class="grey-text text-darken-4">Kapcsolat</a></li>
+                        <li class="active"><a href="contact.php" class="grey-text text-darken-4">Kapcsolat</a></li>
                     </ul>
                 </div>
             </div>
@@ -154,7 +154,6 @@
         </div>
     </footer>
 
-    <!--JavaScript at end of body for optimized loading-->
     <script type="text/javascript" src="js/materialize.min.js"></script>
     <script src="js/main.js"></script>
 </body>

@@ -165,7 +165,7 @@
         </div>
         <div id="copyright" class="footer-copyright">
             <div class="container center">
-                Aurora Hungary &copy; 2018
+                Aurora Hungary &copy; 2019.
             </div>
         </div>
     </footer>

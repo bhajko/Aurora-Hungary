@@ -59,7 +59,7 @@
                         <h4>Elérhetőségeink</h4>
                         <div>&nbsp;</div>
                         <h5 class="info"><i class="material-icons small">business</i> Aurora-Enlite Hungary Kft.</h5>
-                        <h5 class="info"><i class="material-icons small">place</i> 2173 Kartal Bartók Béla utca 2-10.</h5>
+                        <h5 class="info"><i class="material-icons small">place</i> 1112 Budapest Lucerna köz 6/A</h5>
                         <h5 class="info"><i class="material-icons small">email</i> info@aurorahungary.hu</h5>
                         <h5 class="info"><i class="material-icons small">phone_iphone</i> 06 20 77 66 272</h5>
                         <div>&nbsp;</div>
